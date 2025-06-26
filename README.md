@@ -1,12 +1,24 @@
-# React + Vite
+# Home Services Auth UI (React + Tailwind CSS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive login and signup interface for a "Home Services" web app, built using **React**, **Tailwind CSS v4**, and **Vite**. This includes custom font integration, navigation, and modern form styling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Tech Stack
 
-## Expanding the ESLint configuration
+- **React 19**
+- **Vite**
+- **Tailwind CSS v4**
+- **React Router DOM v6**
+- **Prettier** (with Tailwind plugin)
+- **Custom fonts:** Work Sans, Montserrat
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- Responsive Login and Signup forms
+- Header with active link styling
+- Google Fonts integration (Work Sans, Montserrat)
+- Font utilities without needing `tailwind.config.js`
+- Clean layout with utility-first design
