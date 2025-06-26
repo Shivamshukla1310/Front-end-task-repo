@@ -1,0 +1,26 @@
+nav {
+   display: flex;
+   justify-content: space-between;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+}
+button {
+    padding: 7px;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+.S_button {
+    background-color: rgb(211, 208, 208);
+    margin-right: 50px;
+    color: black;
+    width: 80px;
+}
+.L_button {
+    background-color: rgb(2, 80, 2);
+    width: 80px;
+}
+
+nav h2 {
+    margin-left: 20px;
+}
