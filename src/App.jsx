@@ -1,24 +1,25 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
-import SignUp from './components/SignUp/SignUp';
-import SignIn from './components/SignIn/SignIn';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import Signup from './components/Signup'
+import Login from './components/Login'
+import ForgotPassword from './components/ForgotPassword'
+import CreateNewPassword from './components/CreateNewPassword'
+import Header from './components/Header'
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Navbar />
-        <main>
-          <Routes>
-            <Route path="/" element={<div className="container" style={{padding: '40px 0', textAlign: 'center'}}><h1>Welcome to Home Services</h1><p>Your trusted partner for all home maintenance and repair needs</p></div>} />
-            <Route path="/signup" element={<SignUp />} />
-            <Route path="/signin" element={<SignIn />} />
-          </Routes>
-        </main>
+      <div className="min-h-screen bg-gray-50">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Navigate to="/signup" replace />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/create-new-password" element={<CreateNewPassword />} />
+        </Routes>
       </div>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App
