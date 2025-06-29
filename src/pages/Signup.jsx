@@ -98,7 +98,7 @@ export default function Signup() {
                 className={`w-full px-4 py-2 text-sm sm:text-base rounded-full border ${submitted && errors.password ? 'border-red-500' : 'border-gray-300'}`}
               />
               {showPassword ? (
-                <FaEyeSlash onClick={() => setShowPassword(false)} className="absolute right-3 top-9 cursor-pointer text-green-500 text-lg" />
+                <FaEyeSlash onClick={() => setShowPassword(false)} className="absolute right-3 top-9 cursor-pointer text-gray-500 text-lg" />
               ) : (
                 <FaEye onClick={() => setShowPassword(true)} className="absolute right-3 top-9 cursor-pointer text-green-500 text-lg" />
               )}

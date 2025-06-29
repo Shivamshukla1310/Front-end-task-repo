@@ -74,7 +74,7 @@ export default function Login() {
                 className={`w-full px-4 py-2 rounded-full border ${submitted && errors.password ? 'border-red-500' : 'border-gray-300'}`}
               />
               {showPassword ? (
-                <FaEyeSlash onClick={() => setShowPassword(false)} className="absolute right-3 top-9 cursor-pointer text-green-500 text-lg" />
+                <FaEyeSlash onClick={() => setShowPassword(false)} className="absolute right-3 top-9 cursor-pointer text-gray-500 text-lg" />
               ) : (
                 <FaEye onClick={() => setShowPassword(true)} className="absolute right-3 top-9 cursor-pointer text-green-500 text-lg" />
               )}
@@ -86,23 +86,27 @@ export default function Login() {
             )}
 
             {/* Remember Me + Forgot */}
-            <div className="flex justify-between items-center text-sm mt-2">
-              <label className="flex items-center gap-3 text-black font-medium">
-                Remember Me
-                <div className="relative w-[34px] h-[20px]">
-                  <input
-                    type="checkbox"
-                    id="remember"
-                    className="peer sr-only"
-                  />
-                  <div className="w-full h-full bg-green-400 peer-checked:bg-green-500 rounded-full transition-colors duration-200"></div>
-                  <div className="absolute top-[3px] left-[3px] h-[14px] w-[14px] bg-white rounded-full transition-all duration-200 peer-checked:left-[17px]"></div>
-                </div>
-              </label>
-              <Link to="/forget-password" className="text-gray-700 hover:underline">
-                Forgot Password?
-              </Link>
-            </div>
+         <div className="flex justify-between items-center text-sm mt-2">
+  <label className="flex items-center gap-3 text-black font-medium">
+    Remember Me
+    <div className="relative w-[34px] h-[20px]">
+      <input
+        type="checkbox"
+        id="remember"
+        className="peer sr-only"
+      />
+      {/* Toggle track */}
+      <div className="w-full h-full bg-white border-2 border-gray-500 rounded-full transition-all duration-200 peer-checked:bg-green-500 peer-checked:border-0"></div>
+
+      {/* Toggle circle */}
+      <div className="absolute top-[3px] left-[3px] h-[14px] w-[14px] bg-white border-2 border-gray-500 rounded-full transition-all duration-200 peer-checked:left-[17px] peer-checked:border-0"></div>
+    </div>
+  </label>
+
+  <Link to="/forget-password" className="text-gray-700 hover:underline">
+    Forgot Password?
+  </Link>
+</div>
 
 
             {/* Submit */}
